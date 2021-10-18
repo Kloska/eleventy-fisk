@@ -9,6 +9,6 @@ templateEngineOverride: njk,md
 
 ### Från bloggen
 
-{% for post in collections.post | randomPost %}
+{% for post in collections.posts | randomPost %}
 <a href="{{ post.url }}">{{ post.data.title }}</a>
 {% endfor %}
